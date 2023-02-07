@@ -1,0 +1,16 @@
+:root {
+    /*These are the color that are used in the example. Some are repeated, ik.*/
+    --dark-bg-color: #1f2937;
+    --hero-main-text: #F9FAF8;
+    --hero-secondary-text: #E5E7EB;
+    --header-logo-text: #F9FAF8;
+    --button-color: #3882F6;
+    --information-header: #1F2937;
+    --quote-section: #1F2937;
+    --quote-text: #1F2937;
+}
+
+
+* {
+    box-sizing: border-box;
+}
