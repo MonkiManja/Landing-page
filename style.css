@@ -1,16 +1,86 @@
 :root {
     /*These are the color that are used in the example. Some are repeated, ik.*/
-    --dark-bg-color: #1f2937;
-    --hero-main-text: #F9FAF8;
-    --hero-secondary-text: #E5E7EB;
-    --header-logo-text: #F9FAF8;
-    --button-color: #3882F6;
-    --information-header: #1F2937;
-    --quote-section: #1F2937;
-    --quote-text: #1F2937;
+    --color-1: #1f2937;
+    --color-2: #E5E7EB;
+    --color-3: #F9FAF8;
+    --color-4: #3882F6;
+    
 }
 
 
 * {
+    scroll-behavior: smooth;
+    scroll-padding-top: 40px;
+    font-family: 'Roboto', sans-serif;
     box-sizing: border-box;
+    text-decoration: none;
+    margin: 0px;
+    padding: 0px;
 }
+body {
+    background-color: var(--color-2);
+}
+
+/*Header customization*/
+header {
+    height: 200px;
+    width: 100vw;
+    position: fixed;
+    background-color: var(--color-1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 2.5em;
+}
+header > nav {
+    margin: auto 20% auto 0;
+    width: 600px;
+    color: var(--color-3);
+    display: flex;
+    gap: 4%;
+}
+header > h1 {
+    margin: auto 0 auto 20%;
+    color: var(--color-3)
+}
+
+/*Header customization end*/
+
+/*Hero area*/
+
+/*Cool idea: Making an animation where the monkey comes 
+from the left and the text with the button fades in */
+
+#hero-section {
+    height: calc(100vh);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1em;
+    align-items: center;
+}
+#hero-title-div{
+   width: 30%;
+   font-size: 1.3vw;
+}
+#hero-title-div > h1 {
+    display: block;
+    margin-block: 20px;
+}
+#hero-img-div > img {
+    display:block;
+    width: 30vw;
+    margin: 20px;
+    border-radius: 20px;
+    
+}
+button {
+    height: 3em;
+    width: 10em;
+    border-radius: 15px;
+    font-size: 0.5em;
+    color: var(--color-3);
+    background-color: var(--color-4);
+    border-style: none;
+}
+/*Hero area end*/
