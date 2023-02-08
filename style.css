@@ -1,9 +1,15 @@
 :root {
     /*These are the color that are used in the example. Some are repeated, ik.*/
-    --color-1: #1f2937;
-    --color-2: #E5E7EB;
-    --color-3: #F9FAF8;
-    --color-4: #3882F6;
+    --color-0: #007acc;
+    --color-1: #3e3e42;
+    --color-2: #2d2d30;
+    --color-3: #252526;
+    --color-4: #1e1e1e;
+    --color-5: #111111;
+    --color-6: #f8f9fa;
+
+    --gradient1-1: #f8ff00;
+    --gradient1-2: #3ad59f;
     
 }
 
@@ -18,7 +24,7 @@
     padding: 0px;
 }
 body {
-    background-color: var(--color-2);
+    background-color: var(--color-5);
 }
 
 /*Header customization*/
@@ -26,22 +32,25 @@ header {
     height: 200px;
     width: 100vw;
     position: fixed;
-    background-color: var(--color-1);
+    background-color: var(--color-3);
     display: flex;
     justify-content: space-between;
     align-items: center;
     font-size: 2.5em;
 }
 header > nav {
-    margin: auto 20% auto 0;
+    margin-right: 10%;
     width: 600px;
     color: var(--color-3);
     display: flex;
     gap: 4%;
+    
 }
 header > h1 {
     margin: auto 0 auto 20%;
-    color: var(--color-3)
+    background: -webkit-linear-gradient(var(--gradient1-1), var(--gradient1-2));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 /*Header customization end*/
@@ -66,14 +75,28 @@ from the left and the text with the button fades in */
 #hero-title-div > h1 {
     display: block;
     margin-block: 20px;
+    background: -webkit-linear-gradient(#f8ff00, #3ad59f);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+#hero-title-div > p {
+    display: block;
+    margin-block: 20px;
+    color: var(--color-6)
 }
 #hero-img-div > img {
     display:block;
-    width: 30vw;
+    object-fit: cover;
+    width: 20vw;
+    height: 20vw;
     margin: 20px;
-    border-radius: 20px;
+    border-radius: 50%;
     
 }
+nav > a{
+    color: white;
+}
+
 button {
     height: 3em;
     width: 10em;
@@ -84,3 +107,31 @@ button {
     border-style: none;
 }
 /*Hero area end*/
+
+/*Info section*/
+
+#info-section {
+    height: 100vw;
+    background-color: var(--color-2);
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#info-flex {
+    display:flex;
+    flex-direction:row;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    
+}
+
+.info-box {
+    
+    height: 20vw;
+    width: 20vw;
+    background-color: var(--gradient1-2);
+}
