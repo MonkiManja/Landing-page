@@ -42,20 +42,27 @@ header {
     position: fixed;
     background-color: var(--color-3);
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    font-size: 1em;
+    font-size: 100%;
 }
-header > nav {
-    margin-right: 10%;
-    width: 600px;
+
+header > div {
+    width: 60vw;
+    display: flex;
+    justify-content:  space-between;
+    align-items: center;
+}
+header > div > nav {
+    width: 210px;
     color: var(--color-3);
     display: flex;
     gap: 4%;
+    background-color: #007acc;
     
 }
-header > h1 {
-    margin: auto 0 auto 20%;
+header > div > h1 {
+    margin: auto 0 auto 0;
     
 }
 
