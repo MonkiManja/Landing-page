@@ -1,2 +1,5 @@
 # Landing-page
-The odin project - Foundations 2. 
+The odin project - Foundations 2nd proyect.
+
+My main reason to do this Landing page is to learn git. This is a goofy one. 
+Maybe in a few days i make it somewhat presentable, idk.
