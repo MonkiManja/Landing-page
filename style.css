@@ -16,7 +16,7 @@
 
 * {
     scroll-behavior: smooth;
-    scroll-padding-top: 40px;
+    scroll-padding-top: 10px;
     font-family: 'Roboto', sans-serif;
     box-sizing: border-box;
     text-decoration: none;
@@ -26,6 +26,14 @@
 body {
     background-color: var(--color-5);
 }
+
+.gradient-text {
+    background: -webkit-linear-gradient(var(--gradient1-1), var(--gradient1-2));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
 
 /*Header customization*/
 header {
@@ -48,9 +56,7 @@ header > nav {
 }
 header > h1 {
     margin: auto 0 auto 20%;
-    background: -webkit-linear-gradient(var(--gradient1-1), var(--gradient1-2));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    
 }
 
 /*Header customization end*/
@@ -61,7 +67,7 @@ header > h1 {
 from the left and the text with the button fades in */
 
 #hero-section {
-    height: calc(100vh);
+    height: 100vh;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -75,9 +81,6 @@ from the left and the text with the button fades in */
 #hero-title-div > h1 {
     display: block;
     margin-block: 20px;
-    background: -webkit-linear-gradient(#f8ff00, #3ad59f);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
 }
 #hero-title-div > p {
     display: block;
@@ -111,13 +114,17 @@ button {
 /*Info section*/
 
 #info-section {
-    height: 100vw;
+    height: 100vh;
     background-color: var(--color-2);
     display:flex;
     flex-direction:column;
     justify-content: center;
     align-items: center;
 
+}
+
+#info-section > h1{
+    font-size: 5em;
 }
 
 #info-flex {
@@ -134,4 +141,51 @@ button {
     height: 20vw;
     width: 20vw;
     background-color: var(--gradient1-2);
+}
+
+
+/*Info section end*/
+
+/*Quote section*/
+#quote-section {
+    height: 50vh;
+    background-color: var(--color-3);
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#quote-section >div {
+    margin-inline: 20%;
+    color: white;
+    font-size: 2em;
+}
+
+/*Quote section end*/
+
+/*Quote section*/
+#sign-up-section {
+    height: 50vh;
+    background-color: var(--color-5);
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    font-size: 3em;
+    text-align: center;
+}
+
+/*Quote section end*/
+
+/* Footer */
+
+footer{
+    height: 200px;
+    background-color:#101010;
+    color: white;
+    margin: auto;
+    text-align: center;
+    font-size: 2em;
 }
