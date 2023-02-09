@@ -25,7 +25,11 @@
 }
 body {
     background-color: var(--color-5);
-}
+    
+    background-image: linear-gradient(90deg, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.95) 25%, rgba(0,0,0,0.95) 75%, rgba(0,0,0,0.8) 100%), url(https://shadetreeglamping.com/wp-content/uploads/2018/07/jungle-wallpapers-27913-8360556.jpg);
+    background-repeat: no-repeat;
+    background-size: none;
+}   
 
 .gradient-text {
     background: -webkit-linear-gradient(var(--gradient1-1), var(--gradient1-2));
@@ -58,7 +62,7 @@ header > div > nav {
     color: var(--color-3);
     display: flex;
     gap: 4%;
-    background-color: #007acc;
+   
     
 }
 header > div > h1 {
@@ -130,27 +134,36 @@ button {
     align-items: center;
 
 }
-
 #info-section > h1{
     font-size: 5em;
 }
-
 #info-flex {
     display:flex;
     flex-direction:row;
     justify-content: center;
     align-items: center;
     gap: 1em;
-    
 }
-
 .info-box {
-    
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color:white;
+    font-size: 1.3em;
     height: 20vw;
     width: 20vw;
-    background-color: var(--gradient1-2);
+ 
 }
-
+.info-box > img {
+    height: 18vw;
+    width: 18vw;
+    object-fit: cover;
+    border-radius :10%;
+}
+.info-box:nth-of-type(1) > img {
+    object-position: 0% 0%; 
+}
 
 /*Info section end*/
 
@@ -168,10 +181,11 @@ button {
 #quote-section >div {
     margin-inline: 20%;
     color: white;
-    font-size: 2em;
+    font-size: 170%;
 }
 
 #quote-text {
+    
     font-weight: 300;
 }
 #quote-author {
